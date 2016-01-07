@@ -1,0 +1,274 @@
+{
+  "result": "success",
+  "data": [
+    {
+      "city_id": "131",
+      "city_name": "Agropoli"
+    },
+    {
+      "city_id": "132",
+      "city_name": "Albanella"
+    },
+    {
+      "city_id": "133",
+      "city_name": "Altavilla Silentina"
+    },
+    {
+      "city_id": "134",
+      "city_name": "Angri"
+    },
+    {
+      "city_id": "135",
+      "city_name": "Baronissi"
+    },
+    {
+      "city_id": "136",
+      "city_name": "Battipaglia"
+    },
+    {
+      "city_id": "137",
+      "city_name": "Bellizzi"
+    },
+    {
+      "city_id": "138",
+      "city_name": "Calvanico"
+    },
+    {
+      "city_id": "139",
+      "city_name": "Camerota"
+    },
+    {
+      "city_id": "140",
+      "city_name": "Campagna"
+    },
+    {
+      "city_id": "141",
+      "city_name": "Campora"
+    },
+    {
+      "city_id": "142",
+      "city_name": "Cannalonga"
+    },
+    {
+      "city_id": "143",
+      "city_name": "Capaccio"
+    },
+    {
+      "city_id": "144",
+      "city_name": "Casal Velino"
+    },
+    {
+      "city_id": "145",
+      "city_name": "Castel San Giorgio"
+    },
+    {
+      "city_id": "146",
+      "city_name": "Castellabate"
+    },
+    {
+      "city_id": "147",
+      "city_name": "Castellammare Di Stabia"
+    },
+    {
+      "city_id": "148",
+      "city_name": "Castelnuovo Cilento"
+    },
+    {
+      "city_id": "149",
+      "city_name": "Cava De' Tirreni"
+    },
+    {
+      "city_id": "150",
+      "city_name": "Centola"
+    },
+    {
+      "city_id": "151",
+      "city_name": "Ceraso"
+    },
+    {
+      "city_id": "152",
+      "city_name": "Corbara"
+    },
+    {
+      "city_id": "153",
+      "city_name": "Eboli"
+    },
+    {
+      "city_id": "154",
+      "city_name": "Fisciano"
+    },
+    {
+      "city_id": "155",
+      "city_name": "Futani"
+    },
+    {
+      "city_id": "156",
+      "city_name": "Gioi"
+    },
+    {
+      "city_id": "157",
+      "city_name": "Mercato San Severino"
+    },
+    {
+      "city_id": "158",
+      "city_name": "Moio Della Civitella"
+    },
+    {
+      "city_id": "159",
+      "city_name": "Montecorice"
+    },
+    {
+      "city_id": "160",
+      "city_name": "Montecorvino Pugliano"
+    },
+    {
+      "city_id": "161",
+      "city_name": "Napoli"
+    },
+    {
+      "city_id": "162",
+      "city_name": "Nocera Inferiore"
+    },
+    {
+      "city_id": "163",
+      "city_name": "Nocera Superiore"
+    },
+    {
+      "city_id": "164",
+      "city_name": "Novi Velia"
+    },
+    {
+      "city_id": "165",
+      "city_name": "Ogliastro Cilento"
+    },
+    {
+      "city_id": "166",
+      "city_name": "Olevano Sul Tusciano"
+    },
+    {
+      "city_id": "167",
+      "city_name": "Omignano"
+    },
+    {
+      "city_id": "168",
+      "city_name": "Orria"
+    },
+    {
+      "city_id": "169",
+      "city_name": "Pagani"
+    },
+    {
+      "city_id": "170",
+      "city_name": "Pellezzano"
+    },
+    {
+      "city_id": "171",
+      "city_name": "Perdifumo"
+    },
+    {
+      "city_id": "172",
+      "city_name": "Perito"
+    },
+    {
+      "city_id": "173",
+      "city_name": "Piaggine"
+    },
+    {
+      "city_id": "174",
+      "city_name": "Pisciotta"
+    },
+    {
+      "city_id": "175",
+      "city_name": "Pollica"
+    },
+    {
+      "city_id": "176",
+      "city_name": "Pompei"
+    },
+    {
+      "city_id": "177",
+      "city_name": "Pontecagnano Faiano"
+    },
+    {
+      "city_id": "178",
+      "city_name": "Roccadaspide"
+    },
+    {
+      "city_id": "179",
+      "city_name": "Roccapiemonte"
+    },
+    {
+      "city_id": "180",
+      "city_name": "Sacco"
+    },
+    {
+      "city_id": "181",
+      "city_name": "Salento"
+    },
+    {
+      "city_id": "182",
+      "city_name": "Salerno"
+    },
+    {
+      "city_id": "183",
+      "city_name": "San Marzano Sul Sarno"
+    },
+    {
+      "city_id": "184",
+      "city_name": "San Mauro Cilento"
+    },
+    {
+      "city_id": "185",
+      "city_name": "San Mauro La Bruca"
+    },
+    {
+      "city_id": "186",
+      "city_name": "San Valentino Torio"
+    },
+    {
+      "city_id": "188",
+      "city_name": "Sant'Antonio Abate"
+    },
+    {
+      "city_id": "189",
+      "city_name": "Sant'Egidio Del Monte Albino"
+    },
+    {
+      "city_id": "187",
+      "city_name": "Santa Maria La Carita'"
+    },
+    {
+      "city_id": "190",
+      "city_name": "Sarno"
+    },
+    {
+      "city_id": "191",
+      "city_name": "Scafati"
+    },
+    {
+      "city_id": "192",
+      "city_name": "Serramezzana"
+    },
+    {
+      "city_id": "193",
+      "city_name": "Serre"
+    },
+    {
+      "city_id": "194",
+      "city_name": "Siano"
+    },
+    {
+      "city_id": "195",
+      "city_name": "Stio"
+    },
+    {
+      "city_id": "196",
+      "city_name": "Vallo Della Lucania"
+    },
+    {
+      "city_id": "197",
+      "city_name": "Vietri Sul Mare"
+    }
+  ],
+  "length": 67
+}

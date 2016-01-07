@@ -1,0 +1,283 @@
+<html><head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCZZtLg8encexytLFaSywMVXrma_f0vHE"></script>
+    <style>
+    	@import url('/wp-content/plugins/bustrip/Styles/style.css');
+    </style>
+    <script src="/wp-content/plugins/bustrip/Controllers/Controller_index.js"></script>
+    </head>
+    <body onload="init();popolaSelectCalcolaPercorso();">
+    <div class="section">
+    	<div class="container">
+    		<div class="row">	
+    			<div class="col-md-12">
+    				<ul id="tabs" class="nav nav-tabs" role="tablist">
+  						<li role="presentation" class="active"><a href="#calcolaPercorso" role="tab" data-toggle="tab">Calcola Percorso</a></li>
+ 					 	<li onclick="calcolaLineaInizialeCercaLinee();"><a href="#cercaLinee" role="tab" data-toggle="tab">Cerca Linee</a></li>
+ 		 				<li onclick="popolaSelectVisualizzaBusInTransito();"><a href="#visualizzaBusInTransito" role="tab" data-toggle="tab">Visualizza Bus In Transito</a></li>
+ 		 				<li onclick="popolaSelectCalcolaBiglietto();"><a href="#calcolaBiglietto" role="tab" data-toggle="tab">Calcola Biglietto</a></li>
+					</ul>
+<div class="tab-pane active" role="tabpanel" id="calcolaPercorso">
+  <h2>Calcola Percorso</h2>
+  <div>
+  	 <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <form role="form">
+                <div class="form-group">
+                  <label class="control-label" for="exampleInputEmail1">Da</label>
+                  <select class="form-control" id="CalcolaPercorsoSelectPartenza">
+                
+                  </select>
+                  
+                </div>
+                <!--<div class="form-group">
+                  <label class="control-label" for="exampleInputPassword1">A</label>
+                  <input class="form-control" id="exampleInputPassword1" type="text">
+                </div>-->
+                <div class="form-group">
+                  <label class="control-label" for="exampleInputPassword1">A</label>
+                  <select class="form-control" id="CalcolaPercorsoSelectDestinazione">
+                  
+                  </select>
+                </div>
+                <a class="btn btn-lg btn-primary" id="bt_calcola" onclick="handler()">Calcola</a>
+              </form>
+              <p></p>
+              <p></p>
+            </div>
+            <div class="col-md-6">
+              <div id="table-wrapper">
+                <div id="table-scroll">
+                  <table class = "table">
+                    <thead>
+                      <tr>
+                        <th><span class="text">Linea</span></th>
+                        <th><span class="text">Partenza</span></th>
+                        <th><span class="text">Destinazione</span></th>
+                      </tr>
+                    </thead>
+                    <tbody id="CalcolaPercorsoRisultato">
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <p></p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div id="map" style="height:500px"></div>
+      </div>
+    </div>
+  </body>
+  <script src="/wp-content/plugins/bustrip/Controllers/Controller_CalcolaPercorso.js"></script>
+  
+ 		<!-- <script id="script" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCZZtLg8encexytLFaSywMVXrma_f0vHE&signed_in=true&callback=initMap"
+  async defer></script> -->
+
+
+  </div>
+</div>
+
+<div class="tab-pane" role="tabpanel" id="cercaLinee">
+<br/>
+
+
+  &nbsp;&nbsp;<h2>Cerca Linee</h2>
+    <div>
+    
+  	<div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="form-group" style="display:inline">
+              <label for="sel1">Lista tipologie:</label>
+              <select class="form-control" id="selectTipologiaCercaLinee" onchange="cercaLinee_calcolaLinea()">
+                <option>Qualsiasi</option>
+                <option>Interurbana</option>
+                <option>Urbana</option>
+                <option>Universitaria</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <!-- Qui serve il codice per lo scroll -->
+            <!-- l'head vuole la linea, la partenza e l'arrivo -->
+              <div style="overflow:auto;height:150px" id="divRisultatoCercaLinee">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <!-- Qui serve il codice per lo scroll -->
+            <!-- l'head vuole la fermata e l'orario -->
+            <div style="overflow:auto;height:150px" id="divRisultatoCercaLinee2">
+                  
+            </div>
+          </div>
+          <div class="col-md-8">
+          	<div id="mapCercaLinee" style="height:500px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="mapCercaLinee" style="float:left;width:70%; height:100%"></div>
+<div id="directionsPanelCercaLinee" style="float:right;width:30%;height 100%" ></div>
+    
+    <script src="/wp-content/plugins/bustrip/Controllers/Controller_CercaLinee.js"></script>
+    
+
+   	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCZZtLg8encexytLFaSywMVXrma_f0vHE&signed_in=true&callback=initMapCercaLinee"
+        		async defer> </script> -->
+    
+  
+  
+  </div>
+</div>
+
+<div class="tab-pane" role="tabpanel" id="visualizzaBusInTransito">
+
+  <h2>Visualizza Bus In Transito</h2>
+   <div>
+  	  <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-4" style="margin-right:3%">
+            <label for="sel1">Lista fermate:</label>
+            <select id="sel1" class="form-control">
+     		
+            </select>
+            <div style="margin-top:3%;">
+              <label style="display: inline;" for="usr">Orario [hh:mm]:</label>
+              <input id="inputOra" class="form-control" style="width:30%;" type="time">
+            </div>
+            <button class="btn btn-default" type="button" style="margin-top:3%" onclick="visualizzaBusInTransito()">Visualizza</button>
+          </div>
+          <div class="col-md-4">
+            <table class="table" style="width:100%;">
+              <thead>
+                <tr>
+                  <th>Linea</th>
+                  <th>Partenza</th>
+                  <th>Arrivo</th>
+                </tr>
+              </thead>
+            </table>
+            <div style="overflow: auto; height: 150px;">
+              <table class="table" style="width: 100%;">
+                <tbody id="risultato">
+             
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	<script src="/wp-content/plugins/bustrip/Controllers/Controller_VisualizzaBusInTransito.js"></script>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="tab-pane" role="tabpanel" id="calcolaBiglietto">
+  <h2>Calcola Biglietto</h2>
+  
+   <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section">
+              <div class="background-image"></div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4 text-center">
+                    <form role="form" class="text-left">
+                      <div class="form-group select" id="sel_partenza">
+                        <label class="control-label">Partenza</label>
+                        <select class="form-control" id="selectPartenza">					
+						
+							
+                        </select>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-md-offset-3 col-md-4">
+                    <form role="form" class="text-left">
+                      <div class="form-group select" id="sel_destinazione">
+                        <label class="control-label">Destinazione</label>
+                         <select class="form-control" id="selectDestinazione">					
+						
+                        </select>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-11 text-center">
+            <a class="btn btn-lg btn-primary" id="bt_calcola" onclick="calcolaBiglietto()">Calcola</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="divRisultato">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script src="/wp-content/plugins/bustrip/Controllers/Controller_CalcolaBiglietto.js">
+  
+	</script> 
+</div>
+  
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

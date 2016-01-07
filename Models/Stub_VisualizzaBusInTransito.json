@@ -1,0 +1,58 @@
+{"result":"success",
+   "data":[
+   {
+      "stop_id": "SA001FS",
+      "stop_name": "SALERNO STAZIONE",
+      "stop_lat": "40.674264900532",
+      "stop_lon": "14.7723721987788",
+      "location_type": "0",
+      "parent_station": null,
+	  "route_id_0":"003",
+	  "route_id_1":"008",
+	  "route_id_2":"00A",
+	  "route_id_3":"00B",
+	  "route_id_4":"015",
+	  "route_id_5":"018",
+	  "route_id_6":"024",
+	  "route_id_7":"025",
+	  "route_id_8":"033",
+	  "route_id_9":"034",
+	  "route_id_10":"041"
+	  
+	},
+	{
+      "stop_id": "SA113ME",
+      "stop_name": "PARCO ARBOSTELLA",
+      "stop_lat": "40.6524161935838",
+      "stop_lon": "14.8138288411393",
+      "location_type": "0",
+      "parent_station": null,
+	  "route_id_0":"009",
+	  "route_id_1":"010",
+	  "route_id_2":"012",
+	  "route_id_3":"017",
+	  "route_id_4":"025",
+	  "route_id_5":"027",
+	  "route_id_6":"024"	  
+	  
+    },
+	{
+      "stop_id": "SA350CA",
+      "stop_name": "PIO XI",
+      "stop_lat": "40.6826095377756",
+      "stop_lon": "14.7659083360649",
+      "location_type": "0",
+      "parent_station": null,
+	  "route_id_0":"003",
+	  "route_id_1":"007",
+	  "route_id_2":"009",
+	  "route_id_3":"017",
+	  "route_id_4":"019",
+	  "route_id_5":"039",
+	  "route_id_6":"050",
+	  "route_id_7":"119"
+	  
+    }
+   ],
+   "length":3
+}

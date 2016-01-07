@@ -1,0 +1,45 @@
+   {"result":"success",
+   "data":[
+    {
+      "route_id": "017",
+      "agency_id": "CSTP",
+      "route_short_name": "017",
+      "route_long_name": "Linea 17: SALERNO (PARCO ARBOSTELLA) - VIA CARMINE - UNIVERSITA'",
+      "route_type": "3",
+      "route_color": "FFFFFF",
+      "route_text_color": "000000",
+      "category" : "Universitaria"
+    },
+    {
+      "route_id": "027",
+      "agency_id": "CSTP",
+      "route_short_name": "027",
+      "route_long_name": "Linea 27: PARCO ARBOSTELLA - VIA L. GUERCIO - UNIVERSITA'",
+      "route_type": "3",
+      "route_color": "FFFFFF",
+      "route_text_color": "000000",
+      "category" : "Universitaria"
+    },
+    {
+      "route_id": "023",
+      "agency_id": "CSTP",
+      "route_short_name": "023",
+      "route_long_name": "Linea 23: BARONISSI - CALVANICO",
+      "route_type": "3",
+      "route_color": "FFFFFF",
+      "route_text_color": "000000",
+      "category" : "Interurbana"
+    },
+    {
+      "route_id": "005",
+      "agency_id": "CSTP",
+      "route_short_name": "005",
+      "route_long_name": "Linea 5: VIA LIGEA - ZONA INDUSTRIALE",
+      "route_type": "3",
+      "route_color": "FFFFFF",
+      "route_text_color": "000000",
+      "category" : "Urbana"
+    }
+   ],
+   "length":4
+}

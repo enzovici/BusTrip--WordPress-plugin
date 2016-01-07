@@ -1,0 +1,30 @@
+{
+  "result": "success",
+  "data": [
+    {
+      "route_id": "027",
+      "trip_id": "52_817600",
+      "start_stop_name": "FISCIANO UNIVERSITA",
+      "finish_stop_name": "PARCO ARBOSTELLA"
+    },
+    {
+      "route_id": "027",
+      "trip_id": "52_815374",
+      "start_stop_name": "FISCIANO UNIVERSITA",
+      "finish_stop_name": "FUORNI CAPOLINEA"
+    },
+    {
+      "route_id": "017",
+      "trip_id": "52_815371",
+      "start_stop_name": "FISCIANO UNIVERSITA",
+      "finish_stop_name": "FUORNI CAPOLINEA"
+    },
+    {
+      "route_id": "017",
+      "trip_id": "52_815470",
+      "start_stop_name": "FISCIANO UNIVERSITA",
+      "finish_stop_name": "PARCO ARBOSTELLA"
+    }
+  ],
+  "length": 4
+}
